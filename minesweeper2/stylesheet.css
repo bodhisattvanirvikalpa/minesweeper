@@ -1,0 +1,256 @@
+html,
+body {
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 300;
+   margin: 0;
+   padding: 0;
+   background-color: rgba(26, 25, 25, 0.979);
+   background-position: cover;
+}
+
+h1 {
+   margin-top: 0;
+   padding-top: -0.5em;
+   font-weight: 300;
+   font-family: 'Poppins', sans-serif;
+   font-size: 3rem;
+   font-weight: 700;
+   color: #ffffff;
+}
+
+a {
+   text-decoration: none;
+   display: block;
+   color: #aaa;
+   font-size: 1rem;
+}
+
+.levelselector {
+   padding-left: 2em;
+   margin: 0;
+   margin-bottom: 1rem;
+   display: inline-flex;
+   border-radius: .2rem;
+   border-style: solid;
+   border-color: #050505;
+   overflow: hidden;
+   background-color: rgb(88, 86, 86);
+   background: rgb(255, 255, 255) no-repeat 90% 50%;
+}
+
+
+
+.levelselector select {
+   padding: .5rem 2rem;
+   border: none;
+   box-shadow: none;
+   background-color: transparent;
+   border-radius: 0.2em;
+   background-image: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   font-size: 1rem;
+   font-family: 'Poppins', sans-serif;
+   color: salmon;
+}
+
+
+
+.levelselector select:focus {
+   outline: none;
+}
+
+
+.clearfix {
+   clear: both;
+}
+
+.mainwrapper {
+   min-width: 250px;
+   display: inline-block;
+   margin: 0 auto;
+   padding: 0rem;
+   border-radius: .2rem;
+   margin-bottom: 2rem;
+}
+
+.mainboard {
+   background: rgba(26, 25, 25, 0.979);
+   display: flex;
+   padding: 4rem;
+   margin: 1em;
+   border: solid;
+   border-color: white;
+   border-radius: .5rem;
+}
+
+.mainboard .header {
+   display: inline-block;
+   margin-bottom: 1rem;
+   margin-right: 5em;
+   border-radius: 0.5em;
+   color: #bbb;
+}
+
+.mines {
+    padding: 1em;
+    margin-bottom: 2em;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 0.2em;
+
+}
+
+.timer {
+    padding: 1em;
+    margin-bottom: 2em;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 0.2em;
+
+}
+
+.mainboard .header > div {
+   flex-grow: 1;
+}
+
+.mainboard .gameboard {
+   margin-bottom: 1rem;
+}
+
+.mainboard .restart .restartbutton {
+   border: 0.1em;
+   background: #ffffff;
+   color: seagreen;
+   border-style: solid;
+   border-color: #000000;
+   border-radius: .2em;
+   padding: 0.5rem 3rem;
+   font-size: 1.1rem;
+   font-family: 'Poppins';
+   font-weight: 500;
+   cursor: pointer;
+   outline: 0;
+}
+
+
+
+.zone {
+   background: #eee;
+   background-size: contain !important;
+   background-position: center center !important;
+   background-repeat: no-repeat !important;
+   width: 25px;
+   height: 25px;
+   line-height: 25px;
+   float: left;
+   text-align: center;
+   box-sizing: border-box;
+   display: inline-block;
+   border-radius: 0em;
+   margin: .2rem;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.zone.is-revelead {
+   background: #ddd;
+}
+
+
+.zone.is-mine {
+   background-image: url(/img/bomb.png);
+}
+
+.zone.is-mine.is-clicked {
+   background-color: #d44646;
+}
+
+.zone.is-flagged {
+   background: url(/img/flag.png);
+}
+
+.zone.is-empty {
+   background: rgba(250, 128, 114, 0.801);
+}
+
+.zone.is-low {
+   color: #58a4de;
+}
+
+.zone.is-medium {
+   color: #52c5a7;
+}
+
+.zone.is-high {
+   color: #d44646;
+}
+
+/* footer color */
+
+
+
+.footercolour {
+    
+    background-color: #CA4246;
+    background-image: linear-gradient(
+          45deg,
+          #CA4246 16.666%, 
+          #E16541 16.666%, 
+          #E16541 33.333%, 
+          #F18F43 33.333%, 
+          #F18F43 50%, 
+          #8B9862 50%, 
+          #8B9862 66.666%, 
+          #476098 66.666%, 
+          #476098 83.333%, 
+          #A7489B 83.333%);
+    
+    
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+
+      animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+  
+  }
+  
+  .footercolour:hover{
+      animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+  }
+  
+  
+  @keyframes rainbow-text-simple-animation-rev {
+      0% {
+          background-size: 650%;
+      }
+      40% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 100%;
+      }
+  }
+  
+
+  @keyframes rainbow-text-simple-animation {
+      0% {
+          background-size: 100%;
+      }
+      80% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 650%;
+      }
+  }
+
+  
